@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritter Wk 2 Homework</title>
+    <style>
+
+#window {
+            border: 1px solid;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #slider {
+            display: flex;
+            transform: translateX(-000px);
+            animation: oscillate 20s;
+            
+        }  
+        img {
+            width: 400px;
+            height: 400px;
+        } 
+        
+        #window2 {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        img {
+            width: 400px;
+            height: 400px;
+        }
+
+        #slider2 {
+            display: flex;
+        }
+        #container2 {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: -100%;
+            height: 100%;
+        }
+        
+
+        @keyframes oscillate {
+            0% {
+                transform: translateX(0px);
+            }
+            15%{
+                transform: translateX(-400px);
+
+            }
+    
+            33% {
+                transform: translateX(-800px);
+            }
+            66% {transform: translateX(-400);
+            }
+            75%{
+                transform: translateX(-800px);
+
+            }
+            
+            100% {
+                transform: translateX(-000px);
+
+            }
+            
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div id="window">
+        <div id="slider">
+            <!-- flex items -->
+            <img src="./Images/RunningWater.jpg" alt="">
+            <img src="./Images/Beetle.jpg" alt="">
+            <img src="./Images/Bird.jpg" alt="">
+        </div>
+    </div>
+
+  </script>
+  <p>
+    <div id="window2">
+        <div id="slider2">
+            <img src="./Images/RunningWater.jpg" alt=" WaterBrook">
+            <img src="./Images/Beetle.jpg" alt="Beetel">
+            <img src="./Images/Bird.jpg" alt="Humming Bird">
+
+        </div>
+
+        <div id="container2">
+            <button onclick="previousImage()">&#60</button>
+            <button onclick="nextImage()">&#62</button>
+        </div>
+   
+    </div>
+  </p>
+
+</body>
+</html>

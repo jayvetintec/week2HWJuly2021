@@ -1,0 +1,49 @@
+
+        #window {
+            border: 1px solid;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #slider {
+            display: flex;
+            transform: translateX(-000px);
+            animation: oscillate 20s;
+            
+        }  
+        img {
+            width: 400px;
+            height: 400px;
+        } 
+        
+       
+        
+
+
+        @keyframes oscillate {
+            0% {
+                transform: translateX(0px);
+            }
+            15%{
+                transform: translateX(-400px);
+
+            }
+    
+            33% {
+                transform: translateX(-800px);
+            }
+            66% {transform: translateX(-400);
+            }
+            75%{
+                transform: translateX(-800px);
+
+            }
+            
+            100% {
+                transform: translateX(-000px);
+
+            }
+            
+        }
+    
